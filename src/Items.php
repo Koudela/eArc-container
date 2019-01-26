@@ -38,7 +38,7 @@ class Items implements ItemsInterface, ContainerInterface
      */
     public function has($name): bool
     {
-        return isset($this->items[$name]);
+        return key_exists($name, $this->items);
     }
 
     /**
@@ -74,7 +74,7 @@ class Items implements ItemsInterface, ContainerInterface
      */
     public function set(string $name, $item): void
     {
-        if (isset($this->items[$name])) {
+        if ($this->has($name)) {
             throw new ItemOverwriteException($name);
         }
 
