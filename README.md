@@ -1,6 +1,6 @@
 # eArc-container
 Basic 
-[PSR-11](https://github.com/container-interop/fig-standards/blob/master/proposed/container.md)
+[PSR-11](https://www.php-fig.org/psr/psr-11/)
 compatible php container class, interface and exceptions.
 
 # installation
