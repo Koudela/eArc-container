@@ -26,7 +26,7 @@ trait ItemsTrait
     /**
      * @param mixed[]|null $items
      */
-    public function initItemsTrait(array $items = null)
+    protected function initItemsTrait(array $items = null)
     {
         $this->items = $items ?? [];
     }
