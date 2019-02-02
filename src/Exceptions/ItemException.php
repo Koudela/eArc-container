@@ -1,7 +1,7 @@
 <?php
 /**
  * e-Arc Framework - the explicit Architecture Framework
- * basic psr-11 compatible container class/interface/exceptions
+ * basic psr-11 compatible container blueprint
  *
  * @package earc/container
  * @link https://github.com/Koudela/eArc-container/

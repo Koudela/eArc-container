@@ -1,7 +1,7 @@
 # eArc-container
 Basic 
 [PSR-11](https://www.php-fig.org/psr/psr-11/)
-compatible php container class, interface and exceptions.
+compatible php container blueprint.
 
 # installation
 

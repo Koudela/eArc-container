@@ -1,6 +1,6 @@
 {
     "name": "earc/container",
-    "description": "eArc - the explicit architecture framework - basic psr-11 compatible container",
+    "description": "eArc - the explicit architecture framework - basic psr-11 compatible container blueprint",
     "type": "library",
     "license": "MIT",
     "version": "0.0.1",
