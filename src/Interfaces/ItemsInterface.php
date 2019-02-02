@@ -14,11 +14,13 @@ namespace eArc\Container\Interfaces;
 use eArc\Container\Exceptions\ItemNotFoundException;
 use eArc\Container\Exceptions\ItemOverwriteException;
 use eArc\Container\Exceptions\ItemNotCallableException;
+use Psr\Container\ContainerInterface;
+use IteratorAggregate;
 
 /**
  * Basic item container interface.
  */
-interface ItemsInterface extends \IteratorAggregate
+interface ItemsInterface extends IteratorAggregate, ContainerInterface
 {
     /**
      * Check whether an item exists.
@@ -27,7 +29,7 @@ interface ItemsInterface extends \IteratorAggregate
      *
      * @return bool
      */
-    public function has(string $name): bool;
+    public function has($name): bool;
 
     /**
      * Get an item.
@@ -38,7 +40,7 @@ interface ItemsInterface extends \IteratorAggregate
      *
      * @throws ItemNotFoundException
      */
-    public function get(string $name);
+    public function get($name);
 
     /**
      * Call a callable item.
